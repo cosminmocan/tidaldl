@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build ./container_files --file Dockerfile --tag tidaldl:$(date +%s)
+      run: docker build . --file ./container_files/Dockerfile --tag tidaldl:$(date +%s)
